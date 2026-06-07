@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sense Experience Lab</title>
+    <meta
+      name="description"
+      content="A refined 3D organ gateway for high school students learning special senses.">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body data-page="home">
+    <header class="site-header">
+      <nav class="nav-shell" aria-label="Main navigation">
+        <a class="brand" href="index.html" aria-label="Sense Experience Lab home">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <span>Sense Experience Lab</span>
+        </a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+          <span class="sr-only">Toggle navigation</span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div class="nav-links" id="site-nav">
+          <a href="sense.html?sense=vision">Vision</a>
+          <a href="sense.html?sense=hearing">Hearing</a>
+          <a href="sense.html?sense=balance">Balance</a>
+          <a href="sense.html?sense=smell">Smell</a>
+          <a href="sense.html?sense=taste">Taste</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="home-hero">
+        <div class="section-inner home-hero-grid">
+          <div class="home-copy">
+            <p class="eyebrow">Anatomy and Physiology for Engineers</p>
+            <h1>Explore Special Senses Through Real 3D Organs</h1>
+            <p>
+              Choose one organ. Study the real anatomical model, open the AR view by QR code,
+              then enter a focused interaction and a five-question practice quiz.
+            </p>
+          </div>
+          <aside class="home-rule">
+            <strong>Learning Route</strong>
+            <span>3D organ -> AR anatomy -> interaction -> quiz</span>
+          </aside>
+        </div>
+      </section>
+
+      <section class="organ-gallery" aria-label="3D organ gateway">
+        <div class="section-inner">
+          <div class="section-heading">
+            <p class="eyebrow">3D Organ Gateway</p>
+            <h2>One organ unlocks one sensory world.</h2>
+            <p>
+              The preview is a real embedded 3D anatomy model. Use the buttons below each organ
+              to enter the learning page, scan AR, or answer the quiz.
+            </p>
+          </div>
+
+          <div class="real-organ-grid" id="home-organ-grid"></div>
+        </div>
+      </section>
+
+      <section class="design-note">
+        <div class="section-inner design-note-grid">
+          <div>
+            <p class="eyebrow">For High School Learners</p>
+            <h2>Simple language, real anatomy, active recall.</h2>
+          </div>
+          <p>
+            Every station explains the organ as a biological sensor: input, receptor, nerve
+            signal, and brain interpretation. Students learn by rotating anatomy, scanning AR,
+            trying one interaction, then checking understanding through a Kahoot-style quiz.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="section-inner footer-inner">
+        <span>Sense Experience Lab</span>
+        <span>Special Senses</span>
+      </div>
+    </footer>
+
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
