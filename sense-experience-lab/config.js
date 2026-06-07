@@ -1,0 +1,1 @@
+window.SENSE_LAB_PUBLIC_ORIGIN = "";

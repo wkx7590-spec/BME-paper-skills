@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sense Station - Sense Experience Lab</title>
+    <meta
+      name="description"
+      content="Focused special sense learning station with 3D anatomy, AR access, interaction, and quiz.">
+    <link rel="stylesheet" href="styles-base.css">
+    <link rel="stylesheet" href="experience.css">
+  </head>
+  <body data-page="sense">
+    <header class="site-header">
+      <nav class="nav-shell" aria-label="Main navigation">
+        <a class="brand" href="index.html">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <span>Sense Experience Lab</span>
+        </a>
+        <div class="nav-links nav-links-static">
+          <a id="station-ar-link" href="#">AR</a>
+          <a id="station-quiz-link" href="#">Quiz</a>
+          <a href="index.html">Home</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="station-hero">
+        <div class="section-inner station-hero-grid">
+          <div>
+            <p class="eyebrow" id="station-eyebrow">Organ Station</p>
+            <h1 id="station-title">Sense Station</h1>
+            <p id="station-summary"></p>
+            <div class="hero-actions">
+              <a class="button primary" id="station-ar-button" href="#">Open AR Anatomy</a>
+              <a class="button secondary" id="station-quiz-button" href="#">Quiz</a>
+            </div>
+          </div>
+          <div class="station-model-card">
+            <iframe id="station-model-frame" class="real-model-frame compact-frame" title="3D organ model" allowfullscreen allow="autoplay; fullscreen; xr-spatial-tracking"></iframe>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-band">
+        <div class="section-inner station-learning-grid">
+          <article class="content-panel">
+            <h2>Anatomy Terms</h2>
+            <div class="term-list" id="station-terms"></div>
+          </article>
+
+          <article class="content-panel">
+            <h2>Biological Sensor Logic</h2>
+            <div class="sensor-flow" id="sensor-flow"></div>
+            <p id="engineer-note"></p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-band alt-band">
+        <div class="section-inner">
+          <div class="section-heading">
+            <p class="eyebrow">Interaction</p>
+            <h2 id="interaction-title">Try it</h2>
+            <p id="interaction-intro"></p>
+          </div>
+          <div id="interaction-zone"></div>
+        </div>
+      </section>
+
+      <section class="section-band">
+        <div class="section-inner qr-strip">
+          <div>
+            <p class="eyebrow">Classroom Mode</p>
+            <h2>Scan to answer the quiz.</h2>
+            <p>Kahoot-style practice: each sense has five quick questions designed for active recall.</p>
+          </div>
+          <a class="quiz-qr-link" id="station-quiz-qr-link" href="#">
+            <img id="station-quiz-qr" alt="QR code for quiz">
+            <span>Quiz QR</span>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <script src="config.js"></script>
+    <script src="data.js"></script>
+    <script src="interactions.js"></script>
+    <script src="balance-fix.js"></script>
+    <script src="core.js"></script>
+  </body>
+</html>

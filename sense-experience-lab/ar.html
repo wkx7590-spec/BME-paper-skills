@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AR Anatomy - Sense Experience Lab</title>
+    <meta
+      name="description"
+      content="AR-only special sense anatomy page with real 3D model embeds and anatomical terms.">
+    <link rel="stylesheet" href="styles-base.css">
+    <link rel="stylesheet" href="experience.css">
+  </head>
+  <body data-page="ar">
+    <header class="site-header dark-header">
+      <nav class="nav-shell" aria-label="Main navigation">
+        <a class="brand" href="index.html">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <span>Sense Experience Lab</span>
+        </a>
+        <div class="nav-links nav-links-static">
+          <a id="ar-learn-link" href="sense.html?sense=vision">Learn</a>
+          <a id="ar-quiz-link" href="quiz.html?sense=vision">Quiz</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="ar-page">
+      <section class="section-inner ar-layout">
+        <div class="ar-model-shell">
+          <div class="model-toolbar">
+            <span>Real 3D Anatomy Model</span>
+            <a id="external-model-link" href="#" target="_blank" rel="noreferrer">Open Source Model</a>
+          </div>
+          <iframe id="ar-model-frame" class="real-model-frame" title="3D anatomy model" allowfullscreen allow="autoplay; fullscreen; xr-spatial-tracking"></iframe>
+        </div>
+
+        <aside class="ar-panel">
+          <p class="eyebrow" id="ar-sense-label">AR Anatomy</p>
+          <h1 id="ar-title">AR Anatomy</h1>
+          <p id="ar-summary"></p>
+
+          <div class="term-list" id="ar-terms"></div>
+
+          <div class="qr-callout">
+            <img id="self-ar-qr" alt="QR code for this AR page">
+            <div>
+              <strong>Class Scan</strong>
+              <span>Students scan this code to open the same 3D anatomy page on their phones.</span>
+            </div>
+          </div>
+        </aside>
+      </section>
+    </main>
+
+    <script src="config.js"></script>
+    <script src="data.js"></script>
+    <script src="interactions.js"></script>
+    <script src="balance-fix.js"></script>
+    <script src="core.js"></script>
+  </body>
+</html>
